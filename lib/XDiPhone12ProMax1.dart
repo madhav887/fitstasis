@@ -17,7 +17,7 @@ class XDiPhone12ProMax1 extends StatelessWidget {
             height: 78.0,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage('assets/images/FitStasislogo.png'),
+                image: const AssetImage('assets/images/fitstasislogo.png'),
                 fit: BoxFit.fill,
               ),
             ),

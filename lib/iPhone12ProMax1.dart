@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import './Component21.dart';
 
 class iPhone12ProMax1 extends StatelessWidget {
   iPhone12ProMax1({
@@ -9,10 +8,10 @@ class iPhone12ProMax1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
-      body: Stack(
+      body: ListView(
+        shrinkWrap: true,
         children: <Widget>[
-          Transform.translate(
-            offset: Offset(106.0, 99.0),
+          Container(
             child: Text(
               'Quick Access',
               style: TextStyle(
@@ -24,40 +23,8 @@ class iPhone12ProMax1 extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Transform.translate(
-            offset: Offset(12.0, 156.0),
-            child: SizedBox(
-              width: 82.0,
-              height: 78.0,
-              child: Component21(),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(114.0, 156.0),
-            child: SizedBox(
-              width: 82.0,
-              height: 78.0,
-              child: Component21(),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(224.0, 156.0),
-            child: SizedBox(
-              width: 82.0,
-              height: 78.0,
-              child: Component21(),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(326.0, 156.0),
-            child: SizedBox(
-              width: 82.0,
-              height: 78.0,
-              child: Component21(),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(20.5, 171.0),
+
+            Container(
             child: SizedBox(
               width: 65.0,
               child: Text(
@@ -71,8 +38,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(114.8, 183.0),
+          Container(
             child: SizedBox(
               width: 81.0,
               child: Text(
@@ -86,8 +52,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(230.8, 173.0),
+          Container(
             child: SizedBox(
               width: 69.0,
               child: Text(
@@ -101,8 +66,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(329.8, 171.0),
+          Container(
             child: SizedBox(
               width: 75.0,
               child: Text(
@@ -116,8 +80,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(16.0, 278.0),
+          Container(
             child: Container(
               width: 396.0,
               height: 170.0,
@@ -127,8 +90,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(78.0, 289.0),
+          Container(
             child: Text(
               'Quote of The Day',
               style: TextStyle(
@@ -140,8 +102,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Transform.translate(
-            offset: Offset(22.0, 363.0),
+          Container(
             child: Text(
               '"You miss 100% of the shots you don\'t \ntake." - Wayne Gretzky',
               style: TextStyle(
@@ -153,8 +114,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Transform.translate(
-            offset: Offset(136.0, 463.0),
+          Container(
             child: Text(
               'To-do list',
               style: TextStyle(
@@ -166,8 +126,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Transform.translate(
-            offset: Offset(16.0, 520.0),
+          Container(
             child: Container(
               width: 396.0,
               height: 170.0,
@@ -177,8 +136,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(142.0, 696.0),
+          Container(
             child: Text(
               'Progress',
               style: TextStyle(
@@ -190,8 +148,7 @@ class iPhone12ProMax1 extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
-          Transform.translate(
-            offset: Offset(32.0, 18.0),
+          Container(
             child:
                 // Adobe XD layer: 'fitstasisname' (shape)
                 Container(
