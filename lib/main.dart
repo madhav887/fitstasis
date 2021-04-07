@@ -1,3 +1,4 @@
+import 'package:fitstasis/XDiPhone12ProMax1.dart';
 import 'package:fitstasis/iPhone12ProMax1.dart';
 import 'package:flutter/material.dart';
 
