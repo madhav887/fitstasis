@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-    home: iPhone12ProMax1(),
+    home: XDiPhone12ProMax1(),
     );
     // MyHomePage(title:  ;
   }

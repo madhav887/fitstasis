@@ -15,12 +15,63 @@ class XDiPhone12ProMax1 extends StatelessWidget {
         shrinkWrap: true,
         children: <Widget>[
           Container(
+            padding: EdgeInsets.all(15.0),
             width: 391.0,
             height: 78.0,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: const AssetImage('assets/images/fitstasislogo.png'),
                 fit: BoxFit.fill,
+              ),
+            ),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: const Color(0xff4528f7),
+              border: Border.all(width: 1.0, color: const Color(0xff707070)),
+            ),
+            child: TextButton(
+              onPressed: null,
+              child: Column(
+                children: [
+                  Text(
+                    'Meal Plan',
+                    style: TextStyle(
+                      fontFamily: 'Segoe UI',
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        width: 165.0,
+                        height: 120.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                                const AssetImage('assets/images/MealPlan1.png'),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        width: 165.0,
+                        height: 120.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                                const AssetImage('assets/images/MealPlan2.png'),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
@@ -94,6 +145,7 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                   textAlign: TextAlign.left,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
                       width: 307.0,
@@ -130,10 +182,11 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                   textAlign: TextAlign.left,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      width: 159.0,
-                      height: 118.0,
+                      width: 165.0,
+                      height: 120.0,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: const AssetImage('assets/images/Recipe1.png'),
@@ -141,10 +194,9 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Spacer(),
                     Container(
-                      width: 159.0,
-                      height: 118.0,
+                      width: 165.0,
+                      height: 120.0,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: const AssetImage('assets/images/Recipe2.png'),
@@ -178,10 +230,11 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                   textAlign: TextAlign.left,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                      width: 106.0,
-                      height: 118.0,
+                      width: 112.0,
+                      height: 109.0,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image:
@@ -191,8 +244,8 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 106.0,
-                      height: 118.0,
+                      width: 112.0,
+                      height: 109.0,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image:
@@ -202,8 +255,8 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 106.0,
-                      height: 118.0,
+                      width: 112.0,
+                      height: 109.0,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image:
