@@ -1,5 +1,5 @@
-import 'package:fitstasis/XDiPhone12ProMax1.dart';
-import 'package:fitstasis/iPhone12ProMax1.dart';
+import 'package:fitstasis/Meals.dart';
+import 'package:fitstasis/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-    home: XDiPhone12ProMax1(),
+    home: Meals(),
     );
     // MyHomePage(title:  ;
   }

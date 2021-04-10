@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class iPhone12ProMax1 extends StatelessWidget {
-  iPhone12ProMax1({
+class HomeScreen extends StatelessWidget {
+  HomeScreen({
     Key key,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,19 +38,22 @@ class iPhone12ProMax1 extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              CircleAvatar(
-                backgroundColor: Color(0xff2f52e0),
-                radius: 40,
-                child: SizedBox(
-                  width: 65.0,
-                  child: Text(
-                    'Meal Tracker',
-                    style: TextStyle(
-                      fontFamily: 'Segoe UI',
-                      fontSize: 18,
-                      color: const Color(0xfff9f5f5),
+              InkWell(
+                onTap: () {},
+                child: CircleAvatar(
+                  backgroundColor: Color(0xff2f52e0),
+                  radius: 40,
+                  child: SizedBox(
+                    width: 65.0,
+                    child: Text(
+                      'Meal Tracker',
+                      style: TextStyle(
+                        fontFamily: 'Segoe UI',
+                        fontSize: 18,
+                        color: const Color(0xfff9f5f5),
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 ),
               ),
@@ -110,11 +114,11 @@ class iPhone12ProMax1 extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8.0),
             decoration: BoxDecoration(
-            color: const Color(0xff2f52e0),
-            border: Border.all(width: 1.0, color: const Color(0xff707070)),
-          ),
+              color: const Color(0xff2f52e0),
+              border: Border.all(width: 1.0, color: const Color(0xff707070)),
+            ),
             child: Text(
-             '"You miss 100% of the shots you don take." - Wayne Gretzky',
+              '"You miss 100% of the shots you don take." - Wayne Gretzky',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 22,
@@ -124,7 +128,6 @@ class iPhone12ProMax1 extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-
           Container(
             padding: EdgeInsets.all(8.0),
             child: Text(
@@ -161,6 +164,36 @@ class iPhone12ProMax1 extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bar_chart,
+              color: Colors.black,),
+            label: 'Progress',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.anchor,
+              color: Colors.black,),
+            label: 'Exercises',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              color: Colors.black,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.tapas_sharp,
+              color: Colors.black,),
+            label: 'Meals',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle_outlined,
+              color: Colors.black,),
+            label: 'Profile',
           ),
         ],
       ),

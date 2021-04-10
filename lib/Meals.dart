@@ -1,9 +1,10 @@
+import 'package:fitstasis/HomeScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class XDiPhone12ProMax1 extends StatelessWidget {
-  XDiPhone12ProMax1({
+class Meals extends StatelessWidget {
+  Meals({
     Key key,
   }) : super(key: key);
 
@@ -15,7 +16,6 @@ class XDiPhone12ProMax1 extends StatelessWidget {
         shrinkWrap: true,
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(15.0),
             width: 391.0,
             height: 78.0,
             decoration: BoxDecoration(
@@ -25,13 +25,14 @@ class XDiPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 13.0,),
           Container(
             decoration: BoxDecoration(
               color: const Color(0xff4528f7),
               border: Border.all(width: 1.0, color: const Color(0xff707070)),
             ),
             child: TextButton(
-              onPressed: null,
+              onPressed: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomeScreen())),
               child: Column(
                 children: [
                   Text(
@@ -75,57 +76,7 @@ class XDiPhone12ProMax1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            padding: EdgeInsets.all(8.0),
-            decoration: BoxDecoration(
-              color: const Color(0xff4528f7),
-              border: Border.all(width: 1.0, color: const Color(0xff707070)),
-            ),
-            child: Column(
-              children: [
-                Text(
-                  'Meal Plan',
-                  style: TextStyle(
-                    fontFamily: 'Segoe UI',
-                    fontSize: 40,
-                    color: const Color(0xffeeeaea),
-                    fontWeight: FontWeight.w600,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                Row(
-                  children: [
-                    Transform.rotate(
-                      angle: 1.5708,
-                      child: Container(
-                        width: 125.0,
-                        height: 195.0,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image:
-                                const AssetImage('assets/images/MealPlan1.png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Spacer(),
-                    Container(
-                      width: 195.0,
-                      height: 125.0,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image:
-                              const AssetImage('assets/images/MealPlan2.png'),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
+          SizedBox(height: 10.0,),
           Container(
             padding: EdgeInsets.all(8.0),
             decoration: BoxDecoration(
@@ -138,7 +89,7 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                   'Statistics',
                   style: TextStyle(
                     fontFamily: 'Segoe UI',
-                    fontSize: 41,
+                    fontSize: 40,
                     color: const Color(0xfff5efef),
                     fontWeight: FontWeight.w600,
                   ),
@@ -162,9 +113,8 @@ class XDiPhone12ProMax1 extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: 10.0,),
           Container(
-            width: 396.0,
-            height: 175.0,
             decoration: BoxDecoration(
               color: const Color(0xff2d9bfa),
               border: Border.all(width: 1.0, color: const Color(0xff707070)),
@@ -175,11 +125,11 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                   'Recipe of the Day',
                   style: TextStyle(
                     fontFamily: 'Segoe UI',
-                    fontSize: 35,
+                    fontSize: 40,
                     color: const Color(0xfff2eded),
                     fontWeight: FontWeight.w600,
                   ),
-                  textAlign: TextAlign.left,
+                  textAlign: TextAlign.center,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -209,6 +159,7 @@ class XDiPhone12ProMax1 extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: 10.0,),
           Container(
             padding: EdgeInsets.all(8.0),
             width: 396.0,
@@ -223,7 +174,7 @@ class XDiPhone12ProMax1 extends StatelessWidget {
                   'Discover Recipes',
                   style: TextStyle(
                     fontFamily: 'Segoe UI',
-                    fontSize: 41,
+                    fontSize: 40,
                     color: const Color(0xfff2eded),
                     fontWeight: FontWeight.w600,
                   ),
@@ -270,6 +221,7 @@ class XDiPhone12ProMax1 extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: 10.0,),
         ],
       ),
     );
