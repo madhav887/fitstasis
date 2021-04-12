@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -168,11 +167,11 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.bar_chart,
-              color: Colors.black,),
-            label: 'Progress',
+            icon: Icon(Icons.style,),
+            title: Text('Progress'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.anchor,
@@ -184,6 +183,7 @@ class HomeScreen extends StatelessWidget {
               Icons.home,
               color: Colors.black,
             ),
+            label: 'Home'
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.tapas_sharp,
