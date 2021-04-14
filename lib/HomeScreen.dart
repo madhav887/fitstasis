@@ -166,37 +166,6 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.style,),
-            title: Text('Progress'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.anchor,
-              color: Colors.black,),
-            label: 'Exercises',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: Colors.black,
-            ),
-            label: 'Home'
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.tapas_sharp,
-              color: Colors.black,),
-            label: 'Meals',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined,
-              color: Colors.black,),
-            label: 'Profile',
-          ),
-        ],
-      ),
     );
   }
 }
