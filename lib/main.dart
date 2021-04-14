@@ -1,5 +1,6 @@
 import 'package:fitstasis/Meals.dart';
 import 'package:fitstasis/HomeScreen.dart';
+import 'package:fitstasis/discoverrecipes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-    home: Meals(),
+      home:  Meals(),
     );
     // MyHomePage(title:  ;
   }
