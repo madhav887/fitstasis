@@ -20,7 +20,7 @@ class _NaviBarState extends State<NaviBar> {
     Center(child: Text('Exercises'),),
     HomeScreen(),
     Meals(),
-    XDiPhone12ProMax3(),
+    Profile(),
   ];
 
   Widget build(BuildContext context) {

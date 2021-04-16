@@ -2,13 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class XDiPhone12ProMax4 extends StatelessWidget {
-  XDiPhone12ProMax4({
+class DiscoverRecipes extends StatelessWidget {
+  DiscoverRecipes({
     Key key,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        leading: IconButton(
+          icon: Icon(
+            Icons.chevron_left,
+            color: Colors.black,
+          ),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
