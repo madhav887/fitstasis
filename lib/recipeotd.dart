@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class XDiPhone12ProMax2 extends StatelessWidget {
-  XDiPhone12ProMax2({
+class RecipeofTheDay extends StatelessWidget {
+  RecipeofTheDay({
     Key key,
   }) : super(key: key);
   @override

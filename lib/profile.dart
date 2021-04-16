@@ -10,96 +10,23 @@ class XDiPhone12ProMax3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
-      body: Stack(
+      body: ListView(
+        shrinkWrap: true,
         children: <Widget>[
-          Transform.translate(
-            offset: Offset(32.0, 30.0),
-            child:
-                // Adobe XD layer: 'fitstasisname' (shape)
-                Container(
-              width: 365.0,
-              height: 73.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(37.0),
-                image: DecorationImage(
-                  image: const AssetImage('assets/images/fitstasis_name.png'),
-                  fit: BoxFit.fill,
-                ),
+          Container(
+            width: 391.0,
+            height: 78.0,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: const AssetImage('assets/images/fitstasislogo.png'),
+                fit: BoxFit.fill,
               ),
             ),
           ),
-          Transform.translate(
-            offset: Offset(89.0, 160.0),
-            child:
-                // Adobe XD layer: 'account_circle_blac…' (group)
-                SizedBox(
-              width: 250.0,
-              height: 250.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 250.0, 250.0),
-                    size: Size(250.0, 250.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_bbl7aj,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(2.0, 2.0, 246.0, 246.0),
-                    size: Size(250.0, 250.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_qsm7n0,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
-              ),
+          Container(
+            width: 375,
+              height: 200,
             ),
-          ),
-          Transform.translate(
-            offset: Offset(39.0, 473.0),
-            child: Container(
-              width: 100.0,
-              height: 30.2,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5.0),
-                color: const Color(0xff2f52e0),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(164.0, 473.0),
-            child: Container(
-              width: 100.0,
-              height: 30.2,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5.0),
-                color: const Color(0xff2f52e0),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(289.0, 473.0),
-            child: Container(
-              width: 100.0,
-              height: 30.2,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5.0),
-                color: const Color(0xff2f52e0),
-              ),
-            ),
-          ),
           Transform.translate(
             offset: Offset(66.0, 439.0),
             child: Text(

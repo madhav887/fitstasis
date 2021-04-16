@@ -1,5 +1,6 @@
 import 'package:fitstasis/HomeScreen.dart';
 import 'package:fitstasis/Meals.dart';
+import 'package:fitstasis/profile.dart';
 import 'package:flutter/material.dart';
 
 class NaviBar extends StatefulWidget {
@@ -19,7 +20,7 @@ class _NaviBarState extends State<NaviBar> {
     Center(child: Text('Exercises'),),
     HomeScreen(),
     Meals(),
-    Center(child: Text('Profile'),),
+    XDiPhone12ProMax3(),
   ];
 
   Widget build(BuildContext context) {

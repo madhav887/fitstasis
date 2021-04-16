@@ -1,5 +1,6 @@
 import 'package:fitstasis/HomeScreen.dart';
 import 'package:fitstasis/NaviBar.dart';
+import 'package:fitstasis/recipeotd.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
@@ -120,7 +121,9 @@ class Meals extends StatelessWidget {
               color: const Color(0xff2d9bfa),
               border: Border.all(width: 1.0, color: const Color(0xff707070)),
             ),
-            child: Column(
+            child: TextButton(
+              onPressed: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (context)=>RecipeofTheDay())),
+              child: Column(
               children: [
                 Text(
                   'Recipe of the Day',
@@ -159,6 +162,7 @@ class Meals extends StatelessWidget {
                 )
               ],
             ),
+          ),
           ),
           SizedBox(height: 10.0,),
           Container(
