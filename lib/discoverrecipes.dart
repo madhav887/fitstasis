@@ -2,18 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class XDiPhone12ProMax4 extends StatelessWidget {
-  XDiPhone12ProMax4({
+class discover_recipes extends StatelessWidget {
+  discover_recipes({
     Key key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
-      body: Stack(
+      body: ListView(
         children: <Widget>[
-          Transform.translate(
-            offset: Offset(32.0, 30.0),
+          Container(
             child:
                 // Adobe XD layer: 'fitstasisname' (shape)
                 Container(
