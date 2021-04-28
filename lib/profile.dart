@@ -3,7 +3,7 @@ import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Profile extends StatelessWidget {
-  Profile ({
+  Profile({
     Key key,
   }) : super(key: key);
   @override
@@ -25,456 +25,169 @@ class Profile extends StatelessWidget {
           ),
           Container(
             width: 375,
-              height: 200,
+            height: 200,
+          ),
+          Text(
+            'User:',
+            style: TextStyle(
+              fontFamily: 'Lato',
+              fontSize: 20,
+              color: const Color(0xff47525e),
+              fontWeight: FontWeight.w700,
             ),
-          Transform.translate(
-            offset: Offset(66.0, 439.0),
+            textAlign: TextAlign.left,
+          ),
+          SizedBox(
+            width: 82.0,
             child: Text(
-              'User:',
+              'Weight:',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontSize: 20,
                 color: const Color(0xff47525e),
                 fontWeight: FontWeight.w700,
               ),
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.center,
             ),
           ),
-          Transform.translate(
-            offset: Offset(173.0, 439.0),
-            child: SizedBox(
-              width: 82.0,
-              child: Text(
-                'Weight:',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontSize: 20,
-                  color: const Color(0xff47525e),
-                  fontWeight: FontWeight.w700,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(314.0, 439.0),
-            child: SizedBox(
-              width: 50.0,
-              child: Text(
-                'Age:',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontSize: 20,
-                  color: const Color(0xff47525e),
-                  fontWeight: FontWeight.w700,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(45.0, 480.0),
-            child: SizedBox(
-              width: 88.0,
-              child: Text(
-                'Madhav Raja',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(196.0, 479.0),
-            child: SizedBox(
-              width: 36.0,
-              child: Text(
-                '135',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontSize: 16,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(326.0, 479.0),
-            child: SizedBox(
-              width: 26.0,
-              child: Text(
-                '17',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontSize: 16,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(39.0, 591.0),
-            child:
-                // Adobe XD layer: 'watch_black_24dp' (group)
-                SizedBox(
-              width: 36.0,
-              height: 36.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 36.0, 36.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_bkpd90,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(4.0, 0.0, 28.0, 36.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_4mn95l,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(39.0, 739.0),
-            child:
-                // Adobe XD layer: 'military_tech_black…' (group)
-                SizedBox(
-              width: 36.0,
-              height: 36.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 36.0, 36.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 36.0, 36.0),
-                          size: Size(36.0, 36.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child: Container(
-                            decoration: BoxDecoration(),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(13.0, 2.0, 16.0, 32.0),
-                    size: Size(36.0, 36.0),
-                    pinTop: true,
-                    pinBottom: true,
-                    fixedWidth: true,
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 16.0, 32.0),
-                          size: Size(16.0, 32.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child: SvgPicture.string(
-                            _svg_4m1xr9,
-                            allowDrawingOutsideViewBox: true,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(39.0, 693.0),
-            child:
-                // Adobe XD layer: 'gavel_black_24dp' (group)
-                SizedBox(
-              width: 36.0,
-              height: 36.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 33.6, 36.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 33.6, 36.0),
-                          size: Size(33.6, 36.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child: Container(
-                            decoration: BoxDecoration(),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(4.2, 0.0, 31.8, 33.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 31.8, 33.0),
-                          size: Size(31.8, 33.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(16.1, 3.8, 6.0, 30.0),
-                                size: Size(31.8, 33.0),
-                                pinRight: true,
-                                pinBottom: true,
-                                fixedWidth: true,
-                                fixedHeight: true,
-                                child: Transform.rotate(
-                                  angle: -0.7848,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xff47525e),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(15.6, 0.4, 6.0, 12.0),
-                                size: Size(31.8, 33.0),
-                                pinTop: true,
-                                fixedWidth: true,
-                                fixedHeight: true,
-                                child: Transform.rotate(
-                                  angle: -0.7855,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xff47525e),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(3.4, 12.5, 6.0, 12.0),
-                                size: Size(31.8, 33.0),
-                                pinLeft: true,
-                                fixedWidth: true,
-                                fixedHeight: true,
-                                child: Transform.rotate(
-                                  angle: -0.7854,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xff47525e),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(1.4, 30.0, 18.0, 3.0),
-                                size: Size(31.8, 33.0),
-                                pinLeft: true,
-                                pinBottom: true,
-                                fixedWidth: true,
-                                fixedHeight: true,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xff47525e),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(39.0, 540.0),
-            child:
-                // Adobe XD layer: 'settings_black_24dp…' (group)
-                SizedBox(
-              width: 36.0,
-              height: 36.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 36.0, 36.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_xh7bu1,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(2.3, 2.0, 31.5, 32.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_lzkfpm,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(39.0, 642.0),
-            child:
-                // Adobe XD layer: 'pan_tool_black_24dp…' (group)
-                SizedBox(
-              width: 36.0,
-              height: 36.0,
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 36.0, 36.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_xh7bu1,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(1.3, 0.0, 32.7, 36.0),
-                    size: Size(36.0, 36.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    pinBottom: true,
-                    child: SvgPicture.string(
-                      _svg_g9vwv3,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(85.0, 546.0),
-            child: SizedBox(
-              width: 82.0,
-              child: Text(
-                'Settings',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontSize: 20,
-                  color: const Color(0xff47525e),
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(90.0, 597.0),
+          SizedBox(
+            width: 50.0,
             child: Text(
-              'Fitness Wearables',
+              'Age:',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontSize: 20,
                 color: const Color(0xff47525e),
+                fontWeight: FontWeight.w700,
               ),
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.center,
             ),
           ),
-          Transform.translate(
-            offset: Offset(90.0, 648.0),
+          SizedBox(
+            width: 50.0,
             child: Text(
-              'Privacy Policy',
+              'Madhav Raja',
               style: TextStyle(
                 fontFamily: 'Lato',
-                fontSize: 20,
-                color: const Color(0xff47525e),
+                fontSize: 14,
+                color: const Color(0xffffffff),
               ),
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.center,
             ),
           ),
-          Transform.translate(
-            offset: Offset(90.0, 699.0),
+          SizedBox(
+            width: 36.0,
             child: Text(
-              'Terms & Conditions',
+              '135',
               style: TextStyle(
                 fontFamily: 'Lato',
-                fontSize: 20,
-                color: const Color(0xff47525e),
+                fontSize: 16,
+                color: const Color(0xffffffff),
               ),
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.center,
             ),
           ),
-          Transform.translate(
-            offset: Offset(90.0, 750.0),
+          SizedBox(
+            width: 26.0,
             child: Text(
-              'Premium Membership',
+              '17',
               style: TextStyle(
                 fontFamily: 'Lato',
-                fontSize: 20,
-                color: const Color(0xff47525e),
+                fontSize: 16,
+                color: const Color(0xffffffff),
               ),
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.center,
             ),
+          ),
+          Column(
+            children: [
+              Row(
+                children: [
+                  SvgPicture.string(
+                    _svg_lzkfpm,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
+                  ),
+                  Text(
+                      'Settings',
+                      style: TextStyle(
+                        fontFamily: 'Lato',
+                        fontSize: 20,
+                        color: const Color(0xff47525e),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                ],
+              ),
+              Row(
+                children: [
+                  SvgPicture.string(
+                    _svg_4mn95l,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
+                  ),
+                  Text(
+                    'Fitness Wearables',
+                    style: TextStyle(
+                      fontFamily: 'Lato',
+                      fontSize: 20,
+                      color: const Color(0xff47525e),
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  SvgPicture.string(
+                    _svg_g9vwv3,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
+                  ),
+                  Text(
+                    'Privacy Policy',
+                    style: TextStyle(
+                      fontFamily: 'Lato',
+                      fontSize: 20,
+                      color: const Color(0xff47525e),
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  TextButton.icon(onPressed: null, icon: , label: null),
+                  Text(
+                    'Terms & Conditions',
+                    style: TextStyle(
+                      fontFamily: 'Lato',
+                      fontSize: 20,
+                      color: const Color(0xff47525e),
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  SvgPicture.string(
+                  _svg_4m1xr9,
+                  allowDrawingOutsideViewBox: true,
+                  fit: BoxFit.fill,
+                ),
+                  Text(
+                    'Premium Membership',
+                    style: TextStyle(
+                      fontFamily: 'Lato',
+                      fontSize: 20,
+                      color: const Color(0xff47525e),
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ],
+              ),
+            ],
           ),
         ],
       ),
