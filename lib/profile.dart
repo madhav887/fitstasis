@@ -26,8 +26,97 @@ class Profile extends StatelessWidget {
           Container(
             width: 375,
             height: 200,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: const AssetImage('assets/images/account_circle_black_24dp.png'),
+                fit: BoxFit.fitHeight,
+              ),
+            ),
           ),
-          Text(
+          Row(
+            children: [
+              Column(
+                children: [
+                  Text(
+                    'User:',
+                    style: TextStyle(
+                      fontFamily: 'Lato',
+                      fontSize: 20,
+                      color: const Color(0xff47525e),
+                      fontWeight: FontWeight.w700,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                  SizedBox(
+                    width: 50.0,
+                    child: Text(
+                      'Madhav Raja',
+                      style: TextStyle(
+                        fontFamily: 'Lato',
+                        fontSize: 14,
+                        color: const Color(0xffffffff),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    'Weight:',
+                    style: TextStyle(
+                      fontFamily: 'Lato',
+                      fontSize: 20,
+                      color: const Color(0xff47525e),
+                      fontWeight: FontWeight.w700,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    width: 36.0,
+                    child: Text(
+                      '135',
+                      style: TextStyle(
+                        fontFamily: 'Lato',
+                        fontSize: 16,
+                        color: const Color(0xffffffff),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    'Age:',
+                    style: TextStyle(
+                      fontFamily: 'Lato',
+                      fontSize: 20,
+                      color: const Color(0xff47525e),
+                      fontWeight: FontWeight.w700,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    width: 26.0,
+                    child: Text(
+                      '17',
+                      style: TextStyle(
+                        fontFamily: 'Lato',
+                        fontSize: 16,
+                        color: const Color(0xffffffff),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+
+                  ),
+                ],
+              ),
+            ],
+          ),
+          /*Text(
             'User:',
             style: TextStyle(
               fontFamily: 'Lato',
@@ -36,8 +125,8 @@ class Profile extends StatelessWidget {
               fontWeight: FontWeight.w700,
             ),
             textAlign: TextAlign.left,
-          ),
-          SizedBox(
+          ),*/
+ /*         SizedBox(
             width: 82.0,
             child: Text(
               'Weight:',
@@ -49,8 +138,8 @@ class Profile extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-          ),
-          SizedBox(
+          ),*/
+/*          SizedBox(
             width: 50.0,
             child: Text(
               'Age:',
@@ -62,8 +151,8 @@ class Profile extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-          ),
-          SizedBox(
+          ),*/
+   /*       SizedBox(
             width: 50.0,
             child: Text(
               'Madhav Raja',
@@ -74,8 +163,8 @@ class Profile extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-          ),
-          SizedBox(
+          ),*/
+/*          SizedBox(
             width: 36.0,
             child: Text(
               '135',
@@ -86,8 +175,8 @@ class Profile extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-          ),
-          SizedBox(
+          ),*/
+/*          SizedBox(
             width: 26.0,
             child: Text(
               '17',
@@ -98,7 +187,7 @@ class Profile extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-          ),
+          ),*/
           Column(
             children: [
               Row(
@@ -157,7 +246,6 @@ class Profile extends StatelessWidget {
               ),
               Row(
                 children: [
-                  TextButton.icon(onPressed: null, icon: , label: null),
                   Text(
                     'Terms & Conditions',
                     style: TextStyle(
