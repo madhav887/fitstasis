@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class iPhone12ProMax1 extends StatelessWidget {
-  iPhone12ProMax1({
+class suggestedworkouts extends StatelessWidget {
+  suggestedworkouts({
     Key key,
   }) : super(key: key);
   @override

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class iPhone12ProMax1 extends StatelessWidget {
-  iPhone12ProMax1({
+class Schedule extends StatelessWidget {
+  Schedule({
     Key key,
   }) : super(key: key);
   @override
