@@ -1,3 +1,4 @@
+import 'package:fitstasis/Schedule.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -48,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                       'Meal Tracker',
                       style: TextStyle(
                         fontFamily: 'Segoe UI',
-                        fontSize: 18,
+                        fontSize: 15.2,
                         color: const Color(0xfff9f5f5),
                       ),
                       textAlign: TextAlign.center,
@@ -56,43 +57,61 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              CircleAvatar(
-                backgroundColor: Color(0xff2f52e0),
-                radius: 40,
-                child: Text(
-                  'Reminder',
-                  style: TextStyle(
-                    fontFamily: 'Segoe UI',
-                    fontSize: 17,
-                    color: const Color(0xfffbf6f6),
+              InkWell(
+                onTap: () {},
+                child: CircleAvatar(
+                  backgroundColor: Color(0xff2f52e0),
+                  radius: 40,
+                  child: SizedBox(
+                    width: 65.0,
+                    child: Text(
+                      'Reminder',
+                      style: TextStyle(
+                        fontFamily: 'Segoe UI',
+                        fontSize: 15.2,
+                        color: const Color(0xfff9f5f5),
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
-              CircleAvatar(
-                backgroundColor: Color(0xff2f52e0),
-                radius: 40,
-                child: Text(
-                  'Favorite Recipes',
-                  style: TextStyle(
-                    fontFamily: 'Segoe UI',
-                    fontSize: 17,
-                    color: const Color(0xfffcf5f5),
+              InkWell(
+                onTap: () {},
+                child: CircleAvatar(
+                  backgroundColor: Color(0xff2f52e0),
+                  radius: 40,
+                  child: SizedBox(
+                    width: 65.0,
+                    child: Text(
+                      'Favorite Recipes',
+                      style: TextStyle(
+                        fontFamily: 'Segoe UI',
+                        fontSize: 15.2,
+                        color: const Color(0xfff9f5f5),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
-              CircleAvatar(
-                backgroundColor: Color(0xff2f52e0),
-                radius: 40,
-                child: Text(
-                  'Favorite Exercises',
-                  style: TextStyle(
-                    fontFamily: 'Segoe UI',
-                    fontSize: 17,
-                    color: const Color(0xfffbf9f9),
+              InkWell(
+                onTap: () {},
+                child: CircleAvatar(
+                  backgroundColor: Color(0xff2f52e0),
+                  radius: 40,
+                  child: SizedBox(
+                    width: 65.0,
+                    child: Text(
+                      'Favorite Exercises',
+                      style: TextStyle(
+                        fontFamily: 'Segoe UI',
+                        fontSize: 15.2,
+                        color: const Color(0xfff9f5f5),
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
             ],
@@ -130,7 +149,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8.0),
             child: Text(
-              'To-do list',
+              'Schedule',
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 37,
@@ -140,14 +159,18 @@ class HomeScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          Container(
-            padding: EdgeInsets.all(8.0),
+          FlatButton(
+            onPressed: () => Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => Schedule())),
             child: Container(
-              width: 396.0,
-              height: 170.0,
-              decoration: BoxDecoration(
-                color: const Color(0xff2f52e0),
-                border: Border.all(width: 1.0, color: const Color(0xff707070)),
+              padding: EdgeInsets.all(8.0),
+              child: Container(
+                width: 415.0,
+                height: 170.0,
+                decoration: BoxDecoration(
+                  color: const Color(0xff2f52e0),
+                  border: Border.all(width: 1.0, color: const Color(0xff707070)),
+                ),
               ),
             ),
           ),
