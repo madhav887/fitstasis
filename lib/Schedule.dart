@@ -1,6 +1,7 @@
 import 'package:fitstasis/models/event.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Schedule extends StatefulWidget {
   Schedule({
@@ -14,7 +15,6 @@ class Schedule extends StatefulWidget {
 class _ScheduleState extends State<Schedule> {
   DateTime date;
   TextEditingController descriptionController = TextEditingController();
-  List<Event> events = <Event>[];
 
   String getText() {
     if (date == null) {
@@ -37,6 +37,8 @@ class _ScheduleState extends State<Schedule> {
 
   @override
   Widget build(BuildContext context) {
+    List<Event> events = context.read<Events>().events ?? <Event>[];
+
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SingleChildScrollView(
@@ -87,9 +89,7 @@ class _ScheduleState extends State<Schedule> {
                   trailing: IconButton(
                     icon: Icon(CupertinoIcons.clear),
                     onPressed: () {
-                      setState(() {
-                        events.removeAt(index);
-                      });
+                      context.read<Events>().removeEvent(index);
                     },
                   ),
                 );
@@ -248,8 +248,9 @@ class _ScheduleState extends State<Schedule> {
                             date.month, date.day, time.hour, time.minute);
                         Event newEvent =
                             Event(selectedDateTime, descriptionController.text);
+                        context.read<Events>().addEvent(newEvent);
                         setState(() {
-                          events.add(newEvent);
+                          
                         });
                       },
                     ),
