@@ -1,13 +1,24 @@
 import 'package:fitstasis/Schedule.dart';
+import 'package:flutter/cupertino.dart';
+import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/models/Track.dart';
+import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/event.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   HomeScreen({
     Key key,
   }) : super(key: key);
 
   @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
   Widget build(BuildContext context) {
+    List<Event> events = context.watch<Events>().events;
+
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: ListView(
@@ -39,7 +50,8 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () => Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Track())),
                 child: CircleAvatar(
                   backgroundColor: Color(0xff2f52e0),
                   radius: 40,
@@ -169,11 +181,37 @@ class HomeScreen extends StatelessWidget {
                 height: 170.0,
                 decoration: BoxDecoration(
                   color: const Color(0xff2f52e0),
-                  border: Border.all(width: 1.0, color: const Color(0xff707070)),
+                  border:
+                      Border.all(width: 1.0, color: const Color(0xff707070)),
                 ),
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: events.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    DateTime eventDateTime = events[index].time;
+                    return ListTile(
+                      leading: Text(
+                        '${eventDateTime.hour}:${eventDateTime.minute.toString().padLeft(2, '0')}',
+                        style: TextStyle(
+                          fontFamily: 'Segoe UI',
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        events[index].description,
+                        style: TextStyle(
+                          fontFamily: 'Segoe UI',
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                    ),
               ),
             ),
-          ),
           Container(
             padding: EdgeInsets.all(8.0),
             child: Text(

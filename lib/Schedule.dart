@@ -1,4 +1,4 @@
-import 'package:fitstasis/models/event.dart';
+import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/event.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -37,7 +37,7 @@ class _ScheduleState extends State<Schedule> {
 
   @override
   Widget build(BuildContext context) {
-    List<Event> events = context.read<Events>().events ?? <Event>[];
+    List<Event> events = context.watch<Events>().events;
 
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
@@ -247,12 +247,9 @@ class _ScheduleState extends State<Schedule> {
                         DateTime selectedDateTime = DateTime(date.year,
                             date.month, date.day, time.hour, time.minute);
                         Event newEvent =
-                            Event(selectedDateTime, descriptionController.text);
+                        Event(selectedDateTime, descriptionController.text);
                         context.read<Events>().addEvent(newEvent);
-                        setState(() {
-                          
-                        });
-                      },
+                      }
                     ),
                     Container(
                       width: 228.0,
