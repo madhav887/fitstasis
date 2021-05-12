@@ -1,7 +1,7 @@
 import 'package:fitstasis/Schedule.dart';
+import 'package:fitstasis/event.dart';
+import 'package:fitstasis/models/Track.dart';
 import 'package:flutter/cupertino.dart';
-import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/models/Track.dart';
-import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/event.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
