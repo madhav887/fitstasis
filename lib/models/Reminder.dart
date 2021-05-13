@@ -10,6 +10,25 @@ class Reminder extends StatelessWidget {
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
+          SizedBox(
+            width: 30,
+            height: 50,
+          ),
+          Row(
+            children: [
+              IconButton(
+                icon: Icon(
+                  Icons.chevron_left,
+                  color: Colors.black,
+                  size: 24,
+                ),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+              Container(
+                  width: 360,
+                  child: Image.asset('assets/images/fitstasislogo.png'))
+            ],
+          ),
           Transform.translate(
             offset: Offset(11.0, 99.0),
             child: Container(

@@ -1,4 +1,16 @@
+import 'package:fitstasis/Meals.dart';
+import 'package:fitstasis/HomeScreen.dart';
+import 'package:fitstasis/Progress.dart';
+import 'package:fitstasis/Schedule.dart';
+import 'package:fitstasis/discoverrecipes.dart';
 import 'package:fitstasis/NaviBar.dart';
+import 'package:fitstasis/lib/Workout.dart';
+import 'package:fitstasis/models/Reminder.dart';
+import 'package:fitstasis/models/Track.dart';
+import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/event.dart';
+import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/Workoutoftheday.dart';
+import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/suggestedworkouts.dart';
+import 'package:fitstasis/recipeotd.dart';
 import 'package:fitstasis/event.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

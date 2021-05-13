@@ -1,6 +1,8 @@
 import 'package:fitstasis/HomeScreen.dart';
 import 'package:fitstasis/Meals.dart';
 import 'package:fitstasis/lib/Workout.dart';
+import 'package:fitstasis/Progress.dart';
+import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/models/Workout.dart';
 import 'package:fitstasis/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +19,7 @@ class _NaviBarState extends State<NaviBar> {
   @override
   int _currentindex = 0;
   final tabs = [
-    Center(child: Text('Progress'),),
+    Progress(),
     Workout(),
     HomeScreen(),
     Meals(),
