@@ -9,8 +9,29 @@ class Track extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff2f52e0),
-      body: Stack(
+
+      body: ListView(
         children: <Widget>[
+          SizedBox(
+            width: 30,
+            height: 50,
+          ),
+          Row(
+            children: [
+              IconButton(
+                color: Colors.white,
+                icon: Icon(
+                  Icons.chevron_left,
+                  color: Colors.black,
+                  size: 24,
+                ),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+              Container(
+                  width: 360,
+                  child: Image.asset('assets/images/fitstasislogo.png'))
+            ],
+          ),
           Transform.translate(
             offset: Offset(47.0, 111.0),
             child: Text(

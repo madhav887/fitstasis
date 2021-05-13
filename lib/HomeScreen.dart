@@ -1,4 +1,5 @@
 import 'package:fitstasis/Schedule.dart';
+import 'package:fitstasis/models/Reminder.dart';
 import 'package:flutter/cupertino.dart';
 import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/models/Track.dart';
 import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/event.dart';
@@ -70,7 +71,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () => Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => Reminder())),
                 child: CircleAvatar(
                   backgroundColor: Color(0xff2f52e0),
                   radius: 40,
