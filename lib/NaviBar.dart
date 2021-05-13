@@ -2,7 +2,6 @@ import 'package:fitstasis/HomeScreen.dart';
 import 'package:fitstasis/Meals.dart';
 import 'package:fitstasis/lib/Workout.dart';
 import 'package:fitstasis/Progress.dart';
-import 'file:///C:/Users/dhavr/AndroidStudioProjects/fitstasis/lib/models/Workout.dart';
 import 'package:fitstasis/profile.dart';
 import 'package:flutter/material.dart';
 
